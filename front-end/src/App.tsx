@@ -8,7 +8,7 @@ export default () => {
   // tambahin pagenya disini
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Switch>
         <Suspense fallback={<div>loading...</div>}>
           <Route exact path='/'
