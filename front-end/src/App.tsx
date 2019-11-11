@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, Suspense } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-const App: React.FC = () => {
+export default () => {
+  const Home = lazy(() => import('./pages/Home'))
+  const About = lazy(() => import('./pages/About'))
+  const Destination = lazy(() => import('./pages/Destination'))
+  // tambahin pagenya disini
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Switch>
+        <Suspense fallback={<div>loading...</div>}>
+          <Route exact path='/'
+            render={() => <Home/>} />
+          <Route exact path='/about'
+            render={() => <About />} />
+          <Route exact path='/destination/:name'
+            render={() => <Destination />} />
+          {
+            /* tambahin route nya disini */
+          }
+        </Suspense>
+      </Switch>
+    </BrowserRouter>
+  )
 }
-
-export default App;
