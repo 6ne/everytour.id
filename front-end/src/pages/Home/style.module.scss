@@ -1,0 +1,32 @@
+@import '../../variables/main';
+
+.Home {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  max-height: 100vh;
+  max-width: 100%;;
+  width: 100%;
+
+  & > * {
+    margin: 2% 0;
+  }
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+}
+
+.button {
+  border: solid 1px $cyan;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  margin-top: 15%;
+  padding: 5%;
+}

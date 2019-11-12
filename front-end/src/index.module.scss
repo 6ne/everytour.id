@@ -12,7 +12,10 @@ body, html {
   padding: 0
 }
 
-a { color: $foreground }
+a {
+  color: $foreground;
+  text-decoration: none;
+}
 
 ::selection {
   background-color: $selection;
