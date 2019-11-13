@@ -12,6 +12,10 @@
 
   & > * {
     margin: 2% 0;
+    
+    @media #{$phone-landscape} {
+      margin: 0;
+    }
   }
 }
 
@@ -29,4 +33,8 @@
   font-size: 1.5rem;
   margin-top: 15%;
   padding: 5%;
+    
+  @media #{$phone-landscape} {
+    margin-top: 0%;
+  }
 }
