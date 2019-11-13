@@ -1,0 +1,2 @@
+(this["webpackJsonpfront-end"]=this["webpackJsonpfront-end"]||[]).push([[7],{40:function(t,n,e){"use strict";e.r(n);var a=e(0),c=e.n(a),o=e(11);n.default=function(){return c.a.createElement("div",null,c.a.createElement(o.b,{to:"/contact"},"Contact"))}}}]);
+//# sourceMappingURL=7.af693fd6.chunk.js.map
