@@ -10,7 +10,7 @@ export default () => {
   // tambahin pagenya disini
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Suspense fallback={<div>loading...</div>}>
           <Route exact path='/' render={() => <Home/>} />
