@@ -9,7 +9,7 @@ export default () => {
       <div className={Style.subtitle}>
         helping EVERYbuddy going EVERYwhere!
       </div>
-      <Link to="/tour" className={Style.button}>Liburan Yuk!</Link>
+      <Link to="/destinations" className={Style.button}>Liburan Yuk!</Link>
     </div>
   )
 }

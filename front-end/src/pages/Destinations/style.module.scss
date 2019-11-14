@@ -1,0 +1,16 @@
+@import '../../variables/main';
+
+.Destinations {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  align-items: center;
+  display: flex;
+  font-family: $bodoni;
+  font-size: 3rem;
+  height: 15vh;
+  justify-content: center;
+  max-height: 15vh;
+}

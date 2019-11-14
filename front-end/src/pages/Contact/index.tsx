@@ -1,21 +1,33 @@
 import React from 'react'
+import Style from './style.module.scss'
 import Icon from '../../components/Icon'
 import { faLine, faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom'
+
+const isMobileDetected: Function = (): boolean => {
+  return window.navigator.userAgent.toLowerCase().includes("mobi")
+}
 
 export default () => {
-  // to detech mobile version opened
-  // window.navigator.userAgent.toLowerCase().includes("mobi")
+  let linePath: string = 'https://line.me/ti/p/~comingSoon'
+  let whatsappPath: string = 'https://wa.me/6285695693747'
+  let instagramPath: string = 'https://instagram.com/everytour.id'
+
+  if (isMobileDetected()) {
+    linePath = 'line://ti/p/comingSoon'
+    whatsappPath = 'whatsapp://send?phone=6285695693747'
+    instagramPath = 'instagram://user?username=everytour.id'
+  }
+  
   return (
-    <div>
-      <Link to='/'>Home</Link>
+    <div className={Style.Contact}>
       For more information please reach us via:
-      {/*line://oaMessage/{LINE_id}/?{text_message} */}
-      <Icon Icon={faLine} Path="https://line.me/ti/p/~commingSoon"/>
-      <Icon Icon={faWhatsapp} Path="whatsapp://send?phone=6285695693747" />
-      <Icon Icon={faInstagram} Path="https://instagram.com/everytour.id" />
-      <Icon Icon={faEnvelopeSquare} Path="mailto:contact@findeverytour.com" />
+      <div className={Style.icons}>
+        <Icon Icon={faLine} Path={linePath} />
+        <Icon Icon={faWhatsapp} Path={whatsappPath} />
+        <Icon Icon={faInstagram} Path={instagramPath} />
+        <Icon Icon={faEnvelopeSquare} Path="mailto:contact@findeverytour.com" />
+      </div>
     </div>
   )
 }

@@ -1,1 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+@font-face {
+  font-family: 'Bodoni';
+  src: url('../assets/BodoniFLF-Roman.woff') format('woff'),
+       url('../assets/BodoniFLF-Roman.ttf') format('trutype');
+}

@@ -20,6 +20,7 @@
 }
 
 .title {
+  font-family: $bodoni;
   font-size: 4rem;
 }
 
@@ -28,7 +29,7 @@
 }
 
 .button {
-  border: solid 1px $cyan;
+  border: solid 2px $secondary;
   border-radius: 15px;
   font-size: 1.5rem;
   margin-top: 15%;

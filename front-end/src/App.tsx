@@ -4,27 +4,24 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 export default () => {
   const Home = lazy(() => import('./pages/Home'))
   const About = lazy(() => import('./pages/About'))
-  const Tour = lazy(() => import('./pages/Tour'))
+  const Destinations = lazy(() => import('./pages/Destinations'))
   const Destination = lazy(() => import('./pages/Destination'))
   const Contact = lazy(() => import('./pages/Contact'))
+  const NotFound = lazy(() => import('./pages/NotFound'))
   // tambahin pagenya disini
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Switch>
-        <Suspense fallback={<div>loading...</div>}>
+    <Suspense fallback>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Switch>
           <Route exact path='/' render={() => <Home/>} />
           <Route exact path='/about' render={() => <About />} />
-          <Route exact path='/tour' render={() => <Tour />} />
           <Route exact path='/contact' render={() => <Contact />} />
-          <Route exact path='/destination/:name' render={() => <Destination />} />
-          {/* <Route render={() => <Home />} /> */}
-
-          {
-            /* tambahin route nya disini */
-          }
-        </Suspense>
-      </Switch>
-    </BrowserRouter>
+          <Route exact path='/destinations' render={() => <Destinations />} />
+          <Route path='/destination/:name' render={() => <Destination />} />
+          <Route render={() => <NotFound />} />
+        </Switch>
+      </BrowserRouter>
+    </Suspense>
   )
 }
