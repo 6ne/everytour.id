@@ -6,7 +6,6 @@ interface Props {
 }
 
 const Layout : React.SFC<Props> = (props) => {
-    console.log(props.direction)
     return (
         <div className={`layout ${props.direction}`}>
             {props.children}

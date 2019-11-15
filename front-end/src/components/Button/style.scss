@@ -1,12 +1,11 @@
 @import '../../variables/main';
-.button {
+.Button {
     background-color: $red;
-    font-size: calc(1em + .5vw);
     padding: .25em 1em;
     outline: none;
     border: none;
     border-radius: .5em;
     margin: .5em;
     color:white;
-    box-shadow: .1em .15em .25em#9c9c9c;
+    box-shadow: .1em .15em .25em rgba(125, 125, 125, 0.5);
 }
