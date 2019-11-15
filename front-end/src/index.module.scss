@@ -4,13 +4,19 @@
 body, html {
   background-color: $background;
   color: $foreground;
-  font-family: $lato;
+  font-family: $roboto-s;
   font-size: 15px;
   margin: 0;
   overflow-x: hidden;
   scrollbar-width: none;
   padding: 0;
-  user-select: none;
+  // user-select: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  height: 100%;
 }
 
 a {

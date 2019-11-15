@@ -1,0 +1,25 @@
+@import '../../variables/main';
+
+.Image {
+    display: flex;
+    align-self: center;
+    width: 85%;
+    height: 20vh;
+    margin: 2em;
+    background-size: contain;
+    background-image: url('../../assets/img/lost_in_island.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    @media #{$tablet-portrait} { height: 30vh }
+}
+.Title {
+    font-size: calc(1.5em + 3vw);
+    font-weight: 900;
+}
+.Subtitle { font-size: calc(1em + 1.5vw) }
+.Sentence { font-size: calc(1em + 1vw) }
+.Subtitle, .Sentence { font-weight: 400 }
+
+
+
+

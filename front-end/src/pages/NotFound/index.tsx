@@ -1,11 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Button from '../../components/Button'
+import Layout from '../../components/Layout'
+import styles from './style.module.scss'
 
 export default () => {
   return (
-    <div>
-      <span>Page not found</span>
-      <Link to='/'>Go home!</Link>
-    </div>
+    <Layout direction="column">
+      <div className={styles.Title}>Whoops!!</div>
+      <div className={styles.Subtitle}>Seems like you're misdirection</div>
+      <div className={styles.Image}></div>
+      <div className={styles.Sentence}>You get lost in the island!!</div>
+      <Button to="/" content="Back Home" />
+    </Layout>
   )
 }
