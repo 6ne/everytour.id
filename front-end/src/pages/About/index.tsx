@@ -5,12 +5,10 @@ import { Link } from 'react-router-dom'
 export default () => {
   return (
     <div className={Style.About}>
-      Halooo, selamat datang di EVERY Tour!
-      EVERY adalah agen perjalanan wisata yang menyediakan jasa paket wisata seperti Open Trip, Private Trip, Family Gathering, dan Company Outing. Jadi, kapan mau liburan bareng EVERY?
-
-      (Ada button “LIBURAN YUK!” trs redirect ke destination)
-
-      <Link to="/contact">Contact Us</Link>
+      <span>Halooo, selamat datang di EVERY Tour!</span>
+      <span>EVERY adalah agen perjalanan wisata yang menyediakan jasa paket wisata seperti Open Trip, Private Trip, Family Gathering, dan Company Outing.</span>
+      <span>Jadi, kapan mau liburan bareng EVERY?</span>
+      {/* <Link to="/contact">Contact Us</Link> */}
     </div>
   )
 }

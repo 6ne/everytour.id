@@ -1,0 +1,15 @@
+@import '../../variables/main';
+
+.Linking {
+    pointer-events: none;
+}
+
+.ContentImage {
+    background-size: 200%;
+}
+
+.pdfIcon {
+    display: flex;
+    flex-direction: column;
+    margin: .5em;
+}
