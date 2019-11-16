@@ -9,12 +9,12 @@ export default () => {
 
   return (
     <div className={Style.BurgerContainer}>
-        <div className={Style.burger} onClick={toggleMenu}>
-            <span className={Style.burgerItem}></span>
-            <span className={Style.burgerItem}></span>
-            <span className={Style.burgerItem}></span>
-        </div>
-        <div> { isOpen && <Menu /> } </div>
+      <div className={Style.burger} onClick={toggleMenu}>
+        <span className={Style.burgerItem}></span>
+        <span className={Style.burgerItem}></span>
+        <span className={Style.burgerItem}></span>
+      </div>
+      <div> { isOpen && <Menu /> } </div>
     </div>
   )
 }
