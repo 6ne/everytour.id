@@ -2,22 +2,28 @@ import React from 'react'
 import Style from './style.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+import Layout from '../Layout'
 
 interface IIcon {
   Icon: IconDefinition,
-  Path?: string
+  Path?: string,
+  Text?: string
 }
 
-export default ({ Icon, Path }: IIcon) => {
+export default ({ Icon, Path, Text }: IIcon) => {
   return Path ?
   (
     <a target="_blank" rel="noopener noreferrer" href={Path}>
-      <FontAwesomeIcon icon={Icon} className={Style.Icon} />
+      <Layout Col>
+        <FontAwesomeIcon icon={Icon} className={Style.Icon} />
+        { Text && <span>{Text}</span> }
+      </Layout>
     </a>
   ) :
   (
     <span>
       <FontAwesomeIcon icon={Icon} className={Style.Icon} />
+      { Text && <span>{Text}</span> }
     </span>
   )
 }
