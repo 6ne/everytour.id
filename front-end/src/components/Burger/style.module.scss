@@ -16,14 +16,15 @@
     display: flex;
     flex-direction: column;
     & :nth-child(1) {
-      transform-origin: 0% 0%;
+      transform-origin: top left;
       transition: transform .5s;
     }
     & :nth-child(2) {
-        transform-origin: 0% 100%;
-        transition: transform .5s;
+      transform-origin: center center;
+      transition: transform .5s;
     }
     & :nth-child(3) {
+      transform-origin: bottom left;
       transition: transform .5s;
     }
     
