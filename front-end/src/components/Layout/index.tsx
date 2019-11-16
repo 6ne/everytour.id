@@ -1,16 +1,16 @@
-import React from 'react'
-import './style.scss'
+import React, { ReactNode } from 'react'
+import Style from './style.module.scss'
 
-interface Props {
-    direction: String
+interface ILayout {
+  Col?: boolean,
+  children: ReactNode
 }
 
-const Layout : React.SFC<Props> = (props) => {
-    return (
-        <div className={`layout ${props.direction}`}>
-            {props.children}
-        </div>
-    )
-}
+export default ({ Col, children }: ILayout) => {
+  const direction = Col ? Style.col : Style.row
+  const style = `${Style.Layout} ${direction}`
 
-export default Layout
+  return (
+    <div className={style}> {children} </div>
+  )
+}

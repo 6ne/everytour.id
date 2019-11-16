@@ -1,25 +1,27 @@
 @import '../../variables/main';
 
-.Image {
-    display: flex;
-    align-self: center;
-    width: 85%;
-    height: 20vh;
-    margin: 2em;
-    background-size: contain;
-    background-image: url('../../assets/img/lost_in_island.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    @media #{$tablet-portrait} { height: 30vh }
-}
-.Title {
-    font-size: calc(1.5em + 3vw);
-    font-weight: 900;
-}
-.Subtitle { font-size: calc(1em + 1.5vw) }
-.Sentence { font-size: calc(1em + 1vw) }
-.Subtitle, .Sentence { font-weight: 400 }
+.image {
+  align-self: center;
+  background-image: url('../../assets/img/lost_in_island.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  height: 20vh;
+  margin: 2em;
+  width: 85%;
 
+  @media #{$tablet-portrait} { height: 30vh }
+}
+.title {
+  font-size: calc(1.5em + 3vw);
+  font-weight: 900;
+}
 
+.subtitle { font-size: calc(1em + 1.5vw) }
+.sentence { font-size: calc(1em + 1vw) }
+.subtitle, .sentence { font-weight: 400 }
+
+.customButton { font-size: calc(1em + .5vw) }
 
 

@@ -1,0 +1,12 @@
+@import '../../variables/main';
+
+.Button {
+  background-color: $red;
+  border: none;
+  border-radius: .5em;
+  box-shadow: .1em .15em .25em rgba(125, 125, 125, 0.5);
+  color:white;
+  margin: .5em;
+  outline: none;
+  padding: .25em 1em;
+}

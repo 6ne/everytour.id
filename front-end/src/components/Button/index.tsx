@@ -1,23 +1,17 @@
-import React, { CSSProperties } from 'react'
+import React, { ReactNode } from 'react'
+import Style from './style.module.scss'
 import { Link } from 'react-router-dom'
-import './style.scss'
 
-interface Props {
-    to : string
-    content : string
-    fontSize : string
+interface IButton {
+  To: string,
+  children: ReactNode,
+  CustomStyle?: string
 }
 
-const Button : React.SFC<Props> = (props) => {
-    console.log(props.fontSize)
-    const Style : CSSProperties = {
-        fontSize: props.fontSize
-    }
-    return(
-        <Link to={ props.to }>
-            <button className="Button" style={Style}>{ props.content }</button>
-        </Link>
-    )
-}
+export default ({ To, children, CustomStyle }: IButton) => {
+  const style = `${Style.Button} ${CustomStyle}`
 
-export default Button
+  return (
+    <Link to={ To } className={style}> {children} </Link>
+  )
+}

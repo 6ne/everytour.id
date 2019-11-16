@@ -1,0 +1,26 @@
+.MenuIcon {
+  align-items: center;
+  background-color: white;
+  border-radius: .5em;
+  box-shadow: .1em .15em .25em#9c9c9c;
+  display: flex;
+  flex-direction: column;
+  height: 5em;
+  justify-content: center;
+  margin: .5em;
+  padding: 1.5em;
+  width: 5em;
+
+  & > .image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 3.5em;
+    width: 3.5em;
+  }
+
+  & > .text {
+    font-size: 12pt;
+    margin-top: .5em;
+  }
+}

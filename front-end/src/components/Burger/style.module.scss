@@ -1,0 +1,27 @@
+@import '../../variables/main';
+
+.BurgerContainer {
+  align-items: flex-end;
+  align-self: flex-end;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-tap-highlight-color: transparent;
+  
+  & > .burger {
+    display: flex;
+    flex-direction: column;
+    
+    & > .burgerItem {
+      background-color: $foreground;
+      border-radius: 3em;
+      height: .35em;
+      margin: .25em 0;
+      width: 2.5em;
+    }
+  }
+}

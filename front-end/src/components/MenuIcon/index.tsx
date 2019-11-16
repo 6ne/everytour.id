@@ -1,23 +1,22 @@
 import React, { CSSProperties } from 'react'
+import Style from './style.module.scss'
 import { Link } from 'react-router-dom'
-import './style.scss'
 
-interface Props {
-    to : string
-    content : string
-    imgUrl : string
+interface IMenuIcon {
+  To: string,
+  Content: string,
+  ImgUrl: string
 }
 
-const MenuIcon : React.SFC<Props> = (props) => {
-    const Style : CSSProperties = {
-        backgroundImage: 'url(' + props.imgUrl + ')',
-    }
-    return(
-        <Link className="MenuIcon" to={ props.to } >
-            <div className="Image" style={ Style }></div>
-            <div className="Text">{ props.content }</div>
-        </Link>
-    )
-}
+export default ({ To, Content, ImgUrl }: IMenuIcon) => {
+  const backgroundImageStyle: CSSProperties = {
+    backgroundImage: `url(${ImgUrl})`
+  }
 
-export default MenuIcon
+  return (
+    <Link className={Style.MenuIcon} to={To}>
+      <div className={Style.image} style={backgroundImageStyle}></div>
+      <div className={Style.text}>{Content}</div>
+    </Link>
+  )
+}

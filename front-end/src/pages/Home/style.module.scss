@@ -28,14 +28,6 @@
   font-size: 1.15rem;
 }
 
-.button {
-  border: solid 2px $secondary;
-  border-radius: 15px;
-  font-size: 1.5rem;
-  margin-top: 15%;
-  padding: 5%;
-    
-  @media #{$phone-landscape} {
-    margin-top: 0%;
-  }
+.customButton {
+  font-size: calc(1em + 1vw);
 }
