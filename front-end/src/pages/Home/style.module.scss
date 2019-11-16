@@ -22,12 +22,22 @@
 .title {
   font-family: $bodoni;
   font-size: 4rem;
+  line-height: .75em;
+  letter-spacing: .15em;
 }
 
 .subtitle {
-  font-size: 1.15rem;
+  font-family: $lato;
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: .5em;
+  letter-spacing: .25em;
 }
 
 .customButton {
   font-size: calc(1em + 1vw);
+  background-color: transparent !important;
+  border: solid 1pt $foreground !important;
+  color: $foreground !important;
+  box-shadow: none !important;
 }

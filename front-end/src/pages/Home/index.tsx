@@ -6,10 +6,8 @@ export default () => {
   return (
     <div className={Style.Home}>
       <div className={Style.title}>EVERY</div>
-      <div className={Style.subtitle}>Helping EVERYbuddy going EVERYwhere!</div>
-      <Button To="/destinations" CustomStyle={Style.customButton}>
-        Liburan Yuk!
-      </Button>
+      <div className={Style.subtitle}>TOUR & TRAVEL</div>
+      <Button To="/destinations" CustomStyle={Style.customButton}>Liburan Yuk!</Button>
     </div>
   )
 }
