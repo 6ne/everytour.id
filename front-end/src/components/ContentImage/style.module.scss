@@ -1,7 +1,6 @@
 .ContentImage {
     text-align: left;
-    // min-height: 80vh;
-    min-height: 80vh;
+    height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -10,13 +9,14 @@
         align-self: flex-end;
         display: flex;
         flex-direction: column;
-        min-height: 80vh;
+        height: 95vh;
         justify-content: flex-end;
         color:white;
         padding: 1em;
         .title {
             font-weight: 900;
             font-size: 30pt;
+            text-shadow: .1em .15em .25em rgba(125, 125, 125, .5);
         }
         .subtitle {
             font-weight: 400;
