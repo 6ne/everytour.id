@@ -13,3 +13,10 @@
     flex-direction: column;
     margin: .5em;
 }
+
+.ImageContainer {
+    margin: .25em;
+    .ImageItemContainer {
+        justify-content: flex-start;
+    }
+}
