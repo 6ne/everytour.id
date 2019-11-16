@@ -7,17 +7,21 @@ import about from '../../assets/img/about.png'
 import destinations from '../../assets/img/destinations.png'
 import contact from '../../assets/img/contact.png'
 
-export default () => {
+interface IMenu { OnClick: VoidFunction }
+
+export default ({ OnClick }: IMenu) => {
   return (
     <div className={Style.Menu}>
       <Layout>
-        <MenuIcon To="/" Content="Home" ImgUrl={home} />
-        <MenuIcon To="/about" Content="About" ImgUrl={about} />
+        <MenuIcon To="/" Content="Home" ImgUrl={home} OnClick={OnClick} />
+        <MenuIcon To="/about" Content="About" ImgUrl={about}
+          OnClick={OnClick} />
       </Layout>
       <Layout>
         <MenuIcon To="/destinations" Content="Destination"
-          ImgUrl={destinations} />
-        <MenuIcon To="/contact" Content="Contact" ImgUrl={contact} />
+          ImgUrl={destinations} OnClick={OnClick} />
+        <MenuIcon To="/contact" Content="Contact" ImgUrl={contact}
+          OnClick={OnClick} />
       </Layout>
     </div>
   )

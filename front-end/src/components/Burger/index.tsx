@@ -7,19 +7,24 @@ export default () => {
 
   const toggleMenu: VoidFunction = () => setOpen(!isOpen)
 
-  const NormalTransform : CSSProperties = { transform : 'rotate(0deg)' }
-  const Transform45 : CSSProperties = { transform : 'rotate(45deg)' }
-  const TransformMin45 : CSSProperties = { transform : 'rotate(-45deg)' }
-  const Hidden : CSSProperties = { transform : 'rotate(0deg) scale(0)' } 
+  let firstChildStyle: CSSProperties =  { }
+  let secondChildStyle: CSSProperties =  { }
+  let thirdChildStyle: CSSProperties =  { }
+
+  if ( isOpen ) {
+    firstChildStyle = { transform: 'rotate(45deg)' }
+    secondChildStyle = { transform: 'scale(0)' }
+    thirdChildStyle = { transform: 'rotate(-45deg) '}
+  }
 
   return (
     <div className={Style.BurgerContainer}>
       <div className={Style.burger} onClick={toggleMenu}>
-        <span className={Style.burgerItem} style={isOpen !== true ? NormalTransform : Transform45}></span>
-        <span className={Style.burgerItem} style={isOpen !== true ? NormalTransform : Hidden}></span>
-        <span className={Style.burgerItem} style={isOpen !== true ? NormalTransform : TransformMin45}></span>
+        <span className={Style.burgerItem} style={firstChildStyle}></span>
+        <span className={Style.burgerItem} style={secondChildStyle}></span>
+        <span className={Style.burgerItem} style={thirdChildStyle}></span>
       </div>
-      <div> { isOpen && <Menu /> } </div>
+      <div> { isOpen && <Menu OnClick={toggleMenu} /> } </div>
     </div>
   )
 }

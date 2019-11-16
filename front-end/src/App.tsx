@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Burger from './components/Burger'
 
 export default () => {
   const Home = lazy(() => import('./pages/Home'))
@@ -13,6 +14,7 @@ export default () => {
   return (
     <Suspense fallback>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Burger />
         <Switch>
           <Route exact path='/' render={() => <Home/>} />
           <Route exact path='/about' render={() => <About />} />
