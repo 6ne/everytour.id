@@ -22,6 +22,10 @@
 .sentence { font-size: calc(1em + 1vw) }
 .subtitle, .sentence { font-weight: 400 }
 
-.customButton { font-size: calc(1em + .5vw) }
+.customButton { 
+  font-size: calc(1em + .5vw);
+  width: max-content;
+  align-self: center;
+}
 
 
