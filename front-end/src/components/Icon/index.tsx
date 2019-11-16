@@ -7,13 +7,14 @@ import Layout from '../Layout'
 interface IIcon {
   Icon: IconDefinition,
   Path?: string,
-  Text?: string
+  Text?: string,
+  CustomStyles?: string
 }
 
-export default ({ Icon, Path, Text }: IIcon) => {
+export default ({ Icon, Path, Text, CustomStyles }: IIcon) => {
   return Path ?
   (
-    <a target="_blank" rel="noopener noreferrer" href={Path}>
+    <a target="_blank" rel="noopener noreferrer" href={Path} className={CustomStyles}>
       <Layout Col>
         <FontAwesomeIcon icon={Icon} className={Style.Icon} />
         { Text && <span>{Text}</span> }

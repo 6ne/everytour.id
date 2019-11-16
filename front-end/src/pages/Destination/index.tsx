@@ -21,10 +21,10 @@ export default () => {
       <ContentImage To="/" Title="Pulau A" Subtitle="Lorem ipsum dolor" ImgUrl={sunset} CustomLinkStyle={Style.Linking} CustomContentStyle={Style.ContentImage}/>
       
       {/* tinggal kasi margin antar pdf sama apus pdfreader component */}
-      <Layout>
-        <Icon Path="https://somewherethepdfbelongsto.pdf" Text="ID"
+      <Layout customStyles={Style.PDFIconContainer}>
+        <Icon CustomStyles={Style.PDFIcon} Path="https://somewherethepdfbelongsto.pdf" Text="ID"
           Icon={faFilePdf} />
-        <Icon Path="https://somewherethepdfbelongsto.pdf" Text="EN"
+        <Icon CustomStyles={Style.PDFIcon} Path="https://somewherethepdfbelongsto.pdf" Text="EN"
           Icon={faFilePdf} />
       </Layout>
       <Layout Col={true} customStyles={Style.ImageContainer}>
