@@ -23,10 +23,10 @@ export default () => {
     <div className={Style.Contact}>
       For more information please reach us via:
       <div className={Style.icons}>
-        <Icon Icon={faLine} Path={linePath} />
-        <Icon Icon={faWhatsapp} Path={whatsappPath} />
-        <Icon Icon={faInstagram} Path={instagramPath} />
-        <Icon Icon={faEnvelopeSquare} Path="mailto:contact@findeverytour.com" />
+        <Icon Icon={faLine} Path={linePath} CustomStyles={Style.customIcon}/>
+        <Icon Icon={faWhatsapp} Path={whatsappPath} CustomStyles={Style.customIcon}/>
+        <Icon Icon={faInstagram} Path={instagramPath} CustomStyles={Style.customIcon}/>
+        <Icon Icon={faEnvelopeSquare} Path="mailto:contact@findeverytour.com" CustomStyles={Style.customIcon}/>
       </div>
     </div>
   )

@@ -14,7 +14,7 @@ export default () => {
   return (
     <Suspense fallback>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Burger />
+        <Burger/>
         <Switch>
           <Route exact path='/' render={() => <Home/>} />
           <Route exact path='/about' render={() => <About />} />

@@ -9,7 +9,10 @@
   max-height: 100vh;
   max-width: 100%;;
   width: 100vw;
-  background-color: $primary;
+  background: linear-gradient(0deg,rgba(255,180,1,0),rgba(0,0,0,0.7)),url('../../assets/img/sunrise.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   & > * {
     margin: 2% 0;
     
@@ -24,6 +27,7 @@
   font-size: calc(3.5rem + 4vw);
   line-height: .75em;
   letter-spacing: .15em;
+  color: white;
   @media #{$phone-landscape} {
     line-height: 1em;
     letter-spacing: .2em;
@@ -36,6 +40,7 @@
   text-transform: uppercase;
   line-height: .5em;
   letter-spacing: .25em;
+  color: white;
   @media #{$phone-landscape} {
     line-height: .75em;
     letter-spacing: .4em;
@@ -45,9 +50,8 @@
 .customButton {
   font-size: calc(1em + 1vw);
   background-color: transparent !important;
-  border: solid 1pt $foreground !important;
+  border: solid 1pt white !important;
   border-radius: 2em !important;
-  color: $foreground !important;
   box-shadow: none !important;
   margin-top: 2em !important;
 }
