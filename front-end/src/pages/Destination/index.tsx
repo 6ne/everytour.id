@@ -11,6 +11,8 @@ import pharapan from '../../assets/img/pulau-harapan.jpg'
 import bunaken from '../../assets/img/bunaken.jpg'
 import safari from '../../assets/img/sdzsafaripark-meta.jpg'
 import ptidung from '../../assets/img/wisata-pulau-tidung.jpg'
+import Image from '../../components/Image'
+import sunrise from '../../assets/img/sunrise.png'
 
 export default () => {
   let { name } = useParams();
@@ -38,11 +40,28 @@ export default () => {
       <ContentImage To="/" Title={title} Subtitle={subtitle} ImgUrl={img} CustomLinkStyle={Style.Linking} CustomContentStyle={Style.ContentImage}/>
       
       {/* tinggal kasi margin antar pdf sama apus pdfreader component */}
-      <Layout>
-        <Icon Path="https://somewherethepdfbelongsto.pdf" Text="ID"
+      <Layout customStyles={Style.PDFIconContainer}>
+        <Icon CustomStyles={Style.PDFIcon} Path="https://somewherethepdfbelongsto.pdf" Text="ID"
           Icon={faFilePdf} />
-        <Icon Path="https://somewherethepdfbelongsto.pdf" Text="EN"
+        <Icon CustomStyles={Style.PDFIcon} Path="https://somewherethepdfbelongsto.pdf" Text="EN"
           Icon={faFilePdf} />
+      </Layout>
+      <Layout Col={true} customStyles={Style.ImageContainer}>
+        <Layout Col={false} customStyles={Style.ImageItemContainer}>
+          <Image ImgUrl={sunset} />
+          <Image ImgUrl={pharapan} />
+          <Image ImgUrl={safari} />
+        </Layout>
+        <Layout Col={false} customStyles={Style.ImageItemContainer}>
+          <Image ImgUrl={bunaken} />
+          <Image ImgUrl={ptidung} />
+          <Image ImgUrl={sunrise} />
+        </Layout>
+        <Layout Col={false} customStyles={Style.ImageItemContainer}>
+          <Image ImgUrl={safari} />
+          <Image ImgUrl={sunset} />
+          {/* <Image ImgUrl={pharapan} /> */}
+        </Layout>
       </Layout>
     </div>
   )

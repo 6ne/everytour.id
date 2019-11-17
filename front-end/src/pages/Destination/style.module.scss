@@ -4,12 +4,20 @@
     pointer-events: none;
 }
 
+.PDFIconContainer {
+    justify-content: flex-end;
+    .PDFIcon {
+        margin: .5em .5em 0 0;
+    }
+}
+
 .ContentImage {
     background-size: 200%;
 }
 
-.pdfIcon {
-    display: flex;
-    flex-direction: column;
-    margin: .5em;
+.ImageContainer {
+    margin: .25em;
+    .ImageItemContainer {
+        justify-content: flex-start;
+    }
 }
