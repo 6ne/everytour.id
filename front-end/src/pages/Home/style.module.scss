@@ -21,23 +21,33 @@
 
 .title {
   font-family: $bodoni;
-  font-size: 4rem;
+  font-size: calc(3.5rem + 4vw);
   line-height: .75em;
   letter-spacing: .15em;
+  @media #{$phone-landscape} {
+    line-height: 1em;
+    letter-spacing: .2em;
+  }
 }
 
 .subtitle {
   font-family: $lato;
-  font-size: 1rem;
+  font-size: calc(.85rem + 1vw);
   text-transform: uppercase;
   line-height: .5em;
   letter-spacing: .25em;
+  @media #{$phone-landscape} {
+    line-height: .75em;
+    letter-spacing: .4em;
+  }
 }
 
 .customButton {
   font-size: calc(1em + 1vw);
   background-color: transparent !important;
   border: solid 1pt $foreground !important;
+  border-radius: 2em !important;
   color: $foreground !important;
   box-shadow: none !important;
+  margin-top: 2em !important;
 }
