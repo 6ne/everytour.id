@@ -6,7 +6,7 @@ import sunset from '../../assets/img/sunset.jpg'
 import pharapan from '../../assets/img/pulau-harapan.jpg'
 import bunaken from '../../assets/img/bunaken.jpg'
 import safari from '../../assets/img/sdzsafaripark-meta.jpg'
-import ptidung from '../../assets/img/wisata-pulau-tidung.jpeg'
+import ptidung from '../../assets/img/wisata-pulau-tidung.jpg'
 import Button from '../../components/Button'
 export default () => {
   return (

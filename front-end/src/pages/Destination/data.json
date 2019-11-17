@@ -1,0 +1,22 @@
+{
+  "pulauA": {
+    "title": "Pulau A",
+    "subtitle": "Lorem ipsum dolor sit amet"
+  },
+  "pulauB": {
+    "title": "Pulau B",
+    "subtitle": "Lorem ipsum dolor sit amet"
+  },
+  "pulauC": {
+    "title": "Pulau C",
+    "subtitle": "Lorem ipsum dolor sit amet"
+  },
+  "pulauD": {
+    "title": "Pulau D",
+    "subtitle": "Lorem ipsum dolor sit amet"
+  },
+  "pulauE": {
+    "title": "Pulau E",
+    "subtitle": "Lorem ipsum dolor sit amet"
+  }
+}
