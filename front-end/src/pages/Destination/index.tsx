@@ -36,32 +36,24 @@ export default () => {
   const img = images.get(name!) || ""
 
   return (
-    <div>
+    <div className={Style.Container}>
       <ContentImage To="/" Title={title} Subtitle={subtitle} ImgUrl={img} CustomLinkStyle={Style.Linking} CustomContentStyle={Style.ContentImage}/>
-      
-      {/* tinggal kasi margin antar pdf sama apus pdfreader component */}
       <Layout customStyles={Style.PDFIconContainer}>
         <Icon CustomStyles={Style.PDFIcon} Path="https://somewherethepdfbelongsto.pdf" Text="ID"
           Icon={faFilePdf} />
         <Icon CustomStyles={Style.PDFIcon} Path="https://somewherethepdfbelongsto.pdf" Text="EN"
           Icon={faFilePdf} />
       </Layout>
-      <Layout Col={true} customStyles={Style.ImageContainer}>
-        <Layout Col={false} customStyles={Style.ImageItemContainer}>
+      <Layout customStyles={Style.ImageContainer}>
           <Image ImgUrl={sunset} />
           <Image ImgUrl={pharapan} />
           <Image ImgUrl={safari} />
-        </Layout>
-        <Layout Col={false} customStyles={Style.ImageItemContainer}>
           <Image ImgUrl={bunaken} />
           <Image ImgUrl={ptidung} />
           <Image ImgUrl={sunrise} />
-        </Layout>
-        <Layout Col={false} customStyles={Style.ImageItemContainer}>
           <Image ImgUrl={safari} />
           <Image ImgUrl={sunset} />
-          {/* <Image ImgUrl={pharapan} /> */}
-        </Layout>
+          <Image ImgUrl="" />
       </Layout>
     </div>
   )

@@ -3,21 +3,24 @@
 .Linking {
     pointer-events: none;
 }
-
 .PDFIconContainer {
-    justify-content: flex-end;
+    justify-content: center;
     .PDFIcon {
-        margin: .5em .5em 0 0;
+        margin: .5em
     }
 }
-
 .ContentImage {
     background-size: 200%;
 }
-
+.Container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
 .ImageContainer {
-    margin: .25em;
-    .ImageItemContainer {
-        justify-content: flex-start;
-    }
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }

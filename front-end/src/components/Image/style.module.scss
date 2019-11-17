@@ -1,10 +1,11 @@
-.ImageContainer {
+.Image {
+    align-content: center;
     display: flex;
-    margin: .25em;
-    .image {
-        width: 120px;
-        height: 120px;
-        background-size: cover;
-        & :nth-of-type(1) {flex-grow: 1}
-    }
+    flex-basis: 1;
+    justify-content: center;
+    width: 30vw;
+    height: 30vw;
+    margin: 1vw;
+    background-position: center;
+    background-size: cover;
 }
