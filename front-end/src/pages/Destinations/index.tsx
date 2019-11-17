@@ -7,7 +7,10 @@ import pharapan from '../../assets/img/pulau-harapan.jpg'
 import bunaken from '../../assets/img/bunaken.jpg'
 import safari from '../../assets/img/sdzsafaripark-meta.jpg'
 import ptidung from '../../assets/img/wisata-pulau-tidung.jpg'
-import Button from '../../components/Button'
+import Icon from '../../components/Icon'
+import {faCompass} from '@fortawesome/free-solid-svg-icons'
+import Layout from '../../components/Layout'
+
 export default () => {
   return (
     <div className={Style.Destinations}>
@@ -19,10 +22,10 @@ export default () => {
       <ContentImage To="/destination/pulauC" Title="Pulau C" Subtitle="Lorem ipsum dolor" ImgUrl={bunaken} />
       <ContentImage To="/destination/pulauD" Title="Pulau D" Subtitle="Lorem ipsum dolor" ImgUrl={safari} />
       <ContentImage To="/destination/pulauE" Title="Pulau E" Subtitle="Lorem ipsum dolor" ImgUrl={ptidung} />
-      <Button To="/contact" children="Explore More" CustomStyle={Style.customButton} />
-      {/* <Link to='/contact' className={Style.card}>
-        More destination
-      </Link> */}
+      {/* <Button To="/contact" children="Explore More" CustomStyle={Style.customButton} /> */}
+      <Link to='/contact' className={Style.customLink}>
+        <span>Explore More</span>
+      </Link>
     </div>
   )
 }

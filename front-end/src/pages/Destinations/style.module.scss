@@ -15,6 +15,21 @@
   }
 }
 
+.customLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30vh;
+  background: linear-gradient(0deg,rgba(255,180,1,0.2),rgba(0,0,0,1)),url('../../assets/img/sunrise.png');
+  background-size: 200%;
+  background-position: center;
+  color: white;
+  font-size: 24pt;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
 .customButton {
   font-size: calc(1em + 1vw);
 }
