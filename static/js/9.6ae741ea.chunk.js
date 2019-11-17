@@ -1,2 +1,0 @@
-(this["webpackJsonpfront-end"]=this["webpackJsonpfront-end"]||[]).push([[9],{45:function(e,n,t){"use strict";t.r(n);var a=t(0),o=t.n(a),r=t(11);n.default=function(){return o.a.createElement("div",null,o.a.createElement("span",null,"Page not found"),o.a.createElement(r.b,{to:"/"},"Go home!"))}}}]);
-//# sourceMappingURL=9.6ae741ea.chunk.js.map
