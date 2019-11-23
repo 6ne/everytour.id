@@ -7,34 +7,26 @@ import Layout from '../../components/Layout';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import Data from './data.json'
 import Image from '../../components/Image'
-import sunset from '../../assets/img/sunset.jpg'
-import pharapan from '../../assets/img/pulau-harapan.jpg'
-import bunaken from '../../assets/img/bunaken.jpg'
-import safari from '../../assets/img/sdzsafaripark-meta.jpg'
-import ptidung from '../../assets/img/wisata-pulau-tidung.jpg'
-import sunrise from '../../assets/img/sunrise.png'
+import ComingSoon from '../comingSoon'
 
-import _harapan3 from '../../assets/img/harapan/harapan3.jpg'
-import _harapan7 from '../../assets/img/harapan/harapan7.jpg'
-import _harapan8 from '../../assets/img/harapan/harapan8.jpg'
-import _harapan9 from '../../assets/img/harapan/harapan9.jpg'
-import _harapan10 from '../../assets/img/harapan/harapan10.jpg'
-import _harapan11 from '../../assets/img/harapan/harapan3.jpg'
-import _harapan12 from '../../assets/img/harapan/harapan11.jpg'
-import _harapan15 from '../../assets/img/harapan/harapan15.jpg'
-import _harapan19 from '../../assets/img/harapan/harapan19.jpg'
+import harapanThumbnail from '../../assets/images/islands/harapan/thumbnail.jpg'
+
+import _harapan3 from '../../assets/images/islands/harapan/harapan3.jpg'
+import _harapan7 from '../../assets/images/islands/harapan/harapan7.jpg'
+import _harapan8 from '../../assets/images/islands/harapan/harapan8.jpg'
+import _harapan9 from '../../assets/images/islands/harapan/harapan9.jpg'
+import _harapan10 from '../../assets/images/islands/harapan/harapan10.jpg'
+import _harapan11 from '../../assets/images/islands/harapan/harapan3.jpg'
+import _harapan12 from '../../assets/images/islands/harapan/harapan11.jpg'
+import _harapan15 from '../../assets/images/islands/harapan/harapan15.jpg'
+import _harapan19 from '../../assets/images/islands/harapan/harapan19.jpg'
 
 export default () => {
-  console.log(bunaken)
   let { name } = useParams();
   let key = 0;
 
   let images = new Map(Object.entries({
-    harapan: sunset,
-    tidung: pharapan,
-    pari: bunaken,
-    pramuka: safari,
-    belitung: ptidung
+    harapan: harapanThumbnail
   }))
   
   let map = new Map(Object.entries(Data))
@@ -64,6 +56,10 @@ export default () => {
     imgList = []
   } else if (name === 'belitung') {
     imgList = []
+  }
+
+  if (img === "") {
+    return <ComingSoon />
   }
 
   return (

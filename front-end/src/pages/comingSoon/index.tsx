@@ -6,12 +6,11 @@ import Style from './style.module.scss'
 export default () => {
   return (
     <Layout Col customStyles={Style.Layout}>
-      <div className={Style.title}>Whoops!!</div>
-      <div className={Style.subtitle}>Seems like you're misdirection</div>
+      <div className={Style.title}>Do you feel the breeze?</div>
       <div className={Style.image}></div>
-      <div className={Style.sentence}>You get lost in the island!!</div>
-      <Button To="/" CustomStyle={Style.customButton}>
-        Go Home
+      <div className={Style.sentence}>Content coming soon</div>
+      <Button To="/destinations" CustomStyle={Style.customButton}>
+        Explore more
       </Button>
     </Layout>
   )
