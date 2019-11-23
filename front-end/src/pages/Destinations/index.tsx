@@ -14,11 +14,11 @@ import Layout from '../../components/Layout'
 export default () => {
   return (
     <div className={Style.Destinations}>
-      <ContentImage To="/destination/harapan" Title="Pulau Harapan" Subtitle="Lorem ipsum dolor" ImgUrl={sunset} />
-      <ContentImage To="/destination/tidung" Title="Pulau Tidung" Subtitle="Lorem ipsum dolor" ImgUrl={pharapan} />
-      <ContentImage To="/destination/pari" Title="Pulau Pari" Subtitle="Lorem ipsum dolor" ImgUrl={bunaken} />
-      <ContentImage To="/destination/pramuka" Title="Pulau Pramuka" Subtitle="Lorem ipsum dolor" ImgUrl={safari} />
-      <ContentImage To="/destination/belitung" Title="Pulau Belitung" Subtitle="Lorem ipsum dolor" ImgUrl={ptidung} />
+      <ContentImage To="/destination/harapan" Title="Pulau Harapan" Subtitle="" ImgUrl={sunset} />
+      <ContentImage To="/destination/tidung" Title="Pulau Tidung" Subtitle="" ImgUrl={pharapan} />
+      <ContentImage To="/destination/pari" Title="Pulau Pari" Subtitle="" ImgUrl={bunaken} />
+      <ContentImage To="/destination/pramuka" Title="Pulau Pramuka" Subtitle="" ImgUrl={safari} />
+      <ContentImage To="/destination/belitung" Title="Pulau Belitung" Subtitle="" ImgUrl={ptidung} />
       <Link to='/contact' className={Style.customLink}>
         <span>Explore More</span>
       </Link>

@@ -6,12 +6,12 @@ import Icon from '../../components/Icon';
 import Layout from '../../components/Layout';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import Data from './data.json'
+import Image from '../../components/Image'
 import sunset from '../../assets/img/sunset.jpg'
 import pharapan from '../../assets/img/pulau-harapan.jpg'
 import bunaken from '../../assets/img/bunaken.jpg'
 import safari from '../../assets/img/sdzsafaripark-meta.jpg'
 import ptidung from '../../assets/img/wisata-pulau-tidung.jpg'
-import Image from '../../components/Image'
 import sunrise from '../../assets/img/sunrise.png'
 
 import _harapan3 from '../../assets/img/harapan/harapan3.jpg'
