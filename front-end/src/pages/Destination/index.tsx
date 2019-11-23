@@ -15,6 +15,7 @@ import Image from '../../components/Image'
 import sunrise from '../../assets/img/sunrise.png'
 
 export default () => {
+  console.log(bunaken)
   let { name } = useParams();
   let key = 0;
 
