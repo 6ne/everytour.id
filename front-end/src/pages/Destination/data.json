@@ -1,22 +1,56 @@
 {
-  "pulauA": {
-    "title": "Pulau A",
-    "subtitle": "Lorem ipsum dolor sit amet"
+  "harapan": {
+    "title": "Pulau Harapan",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "pdfList": [
+      {
+        "url": "https://somewhere.com/something.pdf",
+        "text": "ID"
+      }
+    ]
   },
-  "pulauB": {
-    "title": "Pulau B",
-    "subtitle": "Lorem ipsum dolor sit amet"
+  "tidung": {
+    "title": "Pulau Tidung",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "pdfList": [
+      {
+        "url": "https://somewhere.com/something.pdf",
+        "text": "ID"
+      },
+      {
+        "url": "https://somewhere.com/something.pdf",
+        "text": "EN"
+      }
+    ]
   },
-  "pulauC": {
-    "title": "Pulau C",
-    "subtitle": "Lorem ipsum dolor sit amet"
+  "pari": {
+    "title": "Pulau Pari",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "pdfList": [
+      {
+        "url": "https://somewhere.com/something.pdf",
+        "text": "ID"
+      }
+    ]
   },
-  "pulauD": {
-    "title": "Pulau D",
-    "subtitle": "Lorem ipsum dolor sit amet"
+  "pramuka": {
+    "title": "Pulau Pramuka",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "pdfList": [
+      {
+        "url": "https://somewhere.com/something.pdf",
+        "text": "ID"
+      }
+    ]
   },
-  "pulauE": {
-    "title": "Pulau E",
-    "subtitle": "Lorem ipsum dolor sit amet"
+  "belitung": {
+    "title": "Pulau Belitung",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "pdfList": [
+      {
+        "url": "https://somewhere.com/something.pdf",
+        "text": "ID"
+      }
+    ]
   }
 }

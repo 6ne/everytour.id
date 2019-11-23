@@ -14,15 +14,11 @@ import Layout from '../../components/Layout'
 export default () => {
   return (
     <div className={Style.Destinations}>
-      {/* <div className={Style.heading}>
-        <span>Destinations</span>
-      </div> */}
-      <ContentImage To="/destination/pulauA" Title="Pulau A" Subtitle="Lorem ipsum dolor" ImgUrl={sunset} />
-      <ContentImage To="/destination/pulauB" Title="Pulau B" Subtitle="Lorem ipsum dolor" ImgUrl={pharapan} />
-      <ContentImage To="/destination/pulauC" Title="Pulau C" Subtitle="Lorem ipsum dolor" ImgUrl={bunaken} />
-      <ContentImage To="/destination/pulauD" Title="Pulau D" Subtitle="Lorem ipsum dolor" ImgUrl={safari} />
-      <ContentImage To="/destination/pulauE" Title="Pulau E" Subtitle="Lorem ipsum dolor" ImgUrl={ptidung} />
-      {/* <Button To="/contact" children="Explore More" CustomStyle={Style.customButton} /> */}
+      <ContentImage To="/destination/harapan" Title="Pulau Harapan" Subtitle="Lorem ipsum dolor" ImgUrl={sunset} />
+      <ContentImage To="/destination/tidung" Title="Pulau Tidung" Subtitle="Lorem ipsum dolor" ImgUrl={pharapan} />
+      <ContentImage To="/destination/pari" Title="Pulau Pari" Subtitle="Lorem ipsum dolor" ImgUrl={bunaken} />
+      <ContentImage To="/destination/pramuka" Title="Pulau Pramuka" Subtitle="Lorem ipsum dolor" ImgUrl={safari} />
+      <ContentImage To="/destination/belitung" Title="Pulau Belitung" Subtitle="Lorem ipsum dolor" ImgUrl={ptidung} />
       <Link to='/contact' className={Style.customLink}>
         <span>Explore More</span>
       </Link>

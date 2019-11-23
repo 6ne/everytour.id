@@ -16,13 +16,14 @@ import sunrise from '../../assets/img/sunrise.png'
 
 export default () => {
   let { name } = useParams();
+  let key = 0;
 
   let images = new Map(Object.entries({
-    pulauA: sunset,
-    pulauB: pharapan,
-    pulauC: bunaken,
-    pulauD: safari,
-    pulauE: ptidung
+    harapan: sunset,
+    tidung: pharapan,
+    pari: bunaken,
+    pramuka: safari,
+    belitung: ptidung
   }))
   
   let map = new Map(Object.entries(Data))
@@ -35,26 +36,46 @@ export default () => {
   const subtitle = pageData.subtitle
   const img = images.get(name!) || ""
 
+  const pdfList = pageData.pdfList
+
+  let imgList: Array<string> = []
+
+  if (name === 'harapan') {
+    imgList = [sunset, pharapan, bunaken, sunset, pharapan, bunaken, sunset, pharapan, bunaken]
+  } else if (name === 'tidung') {
+    imgList = []
+  } else if (name === 'pari') {
+    imgList = []
+  } else if (name === 'pramuka') {
+    imgList = []
+  } else if (name === 'belitung') {
+    imgList = []
+  }
+
   return (
     <div className={Style.Container}>
       <ContentImage To="/" Title={title} Subtitle={subtitle} ImgUrl={img} CustomLinkStyle={Style.Linking} CustomContentStyle={Style.ContentImage}/>
+      
       <Layout customStyles={Style.PDFIconContainer}>
-        <Icon CustomStyles={Style.PDFIcon} Path="https://somewherethepdfbelongsto.pdf" Text="ID"
-          Icon={faFilePdf} />
-        <Icon CustomStyles={Style.PDFIcon} Path="https://somewherethepdfbelongsto.pdf" Text="EN"
-          Icon={faFilePdf} />
+        {
+          pdfList.map((pdf: any) => 
+            <Icon key={++key} CustomStyles={Style.PDFIcon} Path={pdf.url} Text={pdf.text}
+              Icon={faFilePdf} />
+          )
+        }
       </Layout>
-      <Layout customStyles={Style.ImageContainer}>
-          <Image ImgUrl={sunset} />
-          <Image ImgUrl={pharapan} />
-          <Image ImgUrl={safari} />
-          <Image ImgUrl={bunaken} />
-          <Image ImgUrl={ptidung} />
-          <Image ImgUrl={sunrise} />
-          <Image ImgUrl={safari} />
-          <Image ImgUrl={sunset} />
-          <Image ImgUrl="" />
-      </Layout>
+
+      {
+        imgList.length === 0 ?
+        <div>Content Coming soon</div> :
+        <Layout customStyles={Style.ImageContainer}>
+          {
+            imgList.map(img => 
+              <Image key={++key} ImgUrl={img} />
+            )
+          }
+        </Layout>
+      }
     </div>
   )
 }
