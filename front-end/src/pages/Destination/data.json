@@ -1,7 +1,7 @@
 {
   "harapan": {
     "title": "Pulau Harapan",
-    "subtitle": "Lorem ipsum dolor sit amet",
+    "subtitle": "",
     "pdfList": [
       {
         "url": "https://findeverytour.com/_pdf/Pulau Harapan - EVERY Tour.pdf",
@@ -11,7 +11,7 @@
   },
   "tidung": {
     "title": "Pulau Tidung",
-    "subtitle": "Lorem ipsum dolor sit amet",
+    "subtitle": "",
     "pdfList": [
       {
         "url": "https://somewhere.com/something.pdf",
@@ -25,7 +25,7 @@
   },
   "pari": {
     "title": "Pulau Pari",
-    "subtitle": "Lorem ipsum dolor sit amet",
+    "subtitle": "",
     "pdfList": [
       {
         "url": "https://somewhere.com/something.pdf",
@@ -35,7 +35,7 @@
   },
   "pramuka": {
     "title": "Pulau Pramuka",
-    "subtitle": "Lorem ipsum dolor sit amet",
+    "subtitle": "",
     "pdfList": [
       {
         "url": "https://somewhere.com/something.pdf",
@@ -45,7 +45,7 @@
   },
   "belitung": {
     "title": "Pulau Belitung",
-    "subtitle": "Lorem ipsum dolor sit amet",
+    "subtitle": "",
     "pdfList": [
       {
         "url": "https://somewhere.com/something.pdf",
