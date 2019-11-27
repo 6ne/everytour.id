@@ -9,6 +9,14 @@
         margin: .5em
     }
 }
+
+.description {
+  margin: 3% 0;
+  @media #{$desktop-1366} {
+    width: 60% !important;
+  }
+}
+
 .Container {
     display: flex;
     flex-direction: column;

@@ -9,13 +9,14 @@ interface IIcon {
   Path?: string,
   Text?: string,
   CustomStyles?: string
+  Col?: boolean
 }
 
-export default ({ Icon, Path, Text, CustomStyles }: IIcon) => {
+export default ({ Icon, Path, Text, CustomStyles, Col }: IIcon) => {
   return Path ?
   (
     <a target="_blank" rel="noopener noreferrer" href={Path} className={CustomStyles}>
-      <Layout Col>
+      <Layout customStyles={Col ? Style.Col : Style.Row}>
         <FontAwesomeIcon icon={Icon} className={Style.Icon} />
         { Text && <span>{Text}</span> }
       </Layout>

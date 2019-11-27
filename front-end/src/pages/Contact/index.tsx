@@ -9,12 +9,12 @@ const isMobileDetected: Function = (): boolean => {
 }
 
 export default () => {
-  let linePath: string = 'https://line.me/ti/p/~comingSoon'
+  let linePath: string = 'https://line.me/ti/p/~@eyn0335l'
   let whatsappPath: string = 'https://wa.me/6285695693747'
   let instagramPath: string = 'https://instagram.com/everytour.id'
 
   if (isMobileDetected()) {
-    linePath = 'line://ti/p/comingSoon'
+    linePath = 'line://ti/p/@eyn0335l'
     whatsappPath = 'whatsapp://send?phone=6285695693747'
     instagramPath = 'instagram://user?username=everytour.id'
   }

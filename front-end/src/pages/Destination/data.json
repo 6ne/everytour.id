@@ -5,7 +5,7 @@
     "pdfList": [
       {
         "url": "https://findeverytour.com/_pdf/Pulau Harapan - EVERY Tour.pdf",
-        "text": "ID"
+        "text": "Paket Wisata Pulau Harapan"
       }
     ]
   },
@@ -14,12 +14,8 @@
     "subtitle": "",
     "pdfList": [
       {
-        "url": "https://somewhere.com/something.pdf",
-        "text": "ID"
-      },
-      {
-        "url": "https://somewhere.com/something.pdf",
-        "text": "EN"
+        "url": "https://findeverytour.com/_pdf/Pulau Tidung - EVERY Tour.pdf",
+        "text": "Paket Wisata Pulau Tidung"
       }
     ]
   },
@@ -28,8 +24,8 @@
     "subtitle": "",
     "pdfList": [
       {
-        "url": "https://somewhere.com/something.pdf",
-        "text": "ID"
+        "url": "https://findeverytour.com/_pdf/Pulau Pari - EVERY Tour.pdf",
+        "text": "Paket Wisata Pulau Pari"
       }
     ]
   },
@@ -38,8 +34,8 @@
     "subtitle": "",
     "pdfList": [
       {
-        "url": "https://somewhere.com/something.pdf",
-        "text": "ID"
+        "url": "https://findeverytour.com/_pdf/Pulau Pramuka - EVERY Tour.pdf",
+        "text": "Paket Wisata Pulau Pramuka"
       }
     ]
   },
@@ -48,8 +44,8 @@
     "subtitle": "",
     "pdfList": [
       {
-        "url": "https://somewhere.com/something.pdf",
-        "text": "ID"
+        "url": "https://findeverytour.com/_pdf/Pulau Belitung - EVERY Tour.pdf",
+        "text": "Paket Wisata Pulau Belitung"
       }
     ]
   }

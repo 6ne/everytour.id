@@ -7,3 +7,18 @@
 
   &:hover { color: $secondary }
 }
+
+.Col, .Row {
+  width: 50%;
+  &:hover { color: $secondary }
+}
+
+.Row {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  & > * {
+    padding: 0 1%;
+  }
+}
